@@ -1,0 +1,22 @@
+﻿@model CRUDCORE.Models.ViewModels.EmpleadoVM
+@{
+    ViewData["Title"] = "Empleado_Detalle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (Model.oEmpleado.IdEmpleado == 0)
+{
+    <h1>Crear Empleado</h1>
+}
+else
+{
+    <h1>Editar Empleado</h1>
+}
+
+<div class="row">
+    <div class="col-sm-4">
+        <form asp-action="Empleado_Detalle" asp-controller="Home" method="post">
+
+        </form>
+    </div>
+</div>
